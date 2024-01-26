@@ -11,7 +11,7 @@ app.use(express.json());
 
 //para que el backend pueda recibir peticiones del cliente
 const corsOptions = {
-    origin: 'http://localhost:3000', // Reemplaza con el dominio de tu aplicación frontend
+    origin: '*', // Reemplaza con el dominio de tu aplicación frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
